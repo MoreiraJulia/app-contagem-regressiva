@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <html lang="en" class="theme-dark">
+
+<div class="content">
+  <div id="header-box">
+    <span> It's The Final Countdown </span>
+    <div>
+      <input id="date" type="date" />
+      <input id="time" type="time" value="23:59" />
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="digit">
+      <div id="days" class="label">
+        <div class="inner">
+          <span>0</span>
+        </div>
+        <div class="inner">
+          <span>0</span>
+        </div>
+      </div>
+      <span>Dias</span>
+    </div>
+
+    <span>:</span>
+
+    <div class="digit">
+      <div id="hours" class="label">
+        <div class="inner">
+          <span>0</span>
+        </div>
+        <div class="inner">
+          <span>0</span>
+        </div>
+      </div>
+      <span>Horas</span>
+    </div>
+
+    <span>:</span>
+
+    <div class="digit">
+      <div id="minutes" class="label">
+        <div class="inner">
+          <span>0</span>
+        </div>
+        <div class="inner">
+          <span>0</span>
+        </div>
+      </div>
+      <span>Minutos</span>
+    </div>
+
+    <span>:</span>
+
+    <div class="digit">
+      <div id="seconds" class="label">
+        <div class="inner">
+          <span>0</span>
+        </div>
+        <div class="inner">
+          <span>0</span>
+        </div>
+      </div>
+      <span>Segundos</span>
+    </div>
+  </div>
+  <div class="control-btn">
+    <button id="btn-play" onclick="start()">Iniciar</button>
+    <button id="btn-pause" onclick="pause()">Pausar</button>
+    <button id="btn-stop" onclick="stop()">Parar</button>
+    <div class="switch-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+</div>
+<script src="js/app.js"></script> 
+    
+</body>
+</html>
